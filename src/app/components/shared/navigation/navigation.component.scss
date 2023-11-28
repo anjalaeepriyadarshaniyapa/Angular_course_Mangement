@@ -1,0 +1,58 @@
+/* sidenav.component.css */
+.sidenav {
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #333;
+}
+
+ul {
+  list-style: none;
+
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 50px;
+}
+
+li {
+  padding: 20px;
+}
+
+.mobile-nav{ display: none; }
+
+@media only screen and (max-width: 1570px){
+  li {
+    padding: 20px 0 0;
+ }
+
+ a{
+  padding: 0;
+ }
+}
+
+@media only screen and (max-width: 991px){
+ .mobile-nav{ display: block; }
+ .desktop-nav{ display: none; }
+ nav {
+  width: 75%;
+}
+a {
+  font-size: 40px;
+}
+}
+
+@media only screen and (max-width: 600px){
+  .mobile-nav {
+    padding-left: 20px;
+}
+  nav {
+   width: 100%;
+ }
+ a {
+   font-size: 25px;
+ }
+ }
